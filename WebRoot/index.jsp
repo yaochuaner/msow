@@ -1,138 +1,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
     
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>民盛保险</title>
-<meta name="description" content="民盛保险代理有限公司官网">
-<meta name="keywords" content="民盛 官网 集团 保险 保代 金融 服务">
-<link href="./static/css/index/style_ms.css" rel="stylesheet" media="screen" type="text/css">
-</head>
+<html lang="zh-CN">
+<%@include file="./web/public/head.jsp" %>
 <body class="index">
-    <div class="header_ms">
-    <div class="head_box">
-        <div class="head_left">
-            <div class="logo">
-                <a href="http://www.mschn.cn/">
-                    <img src="./static/img/index/logo.png" alt="民盛保险代理有限公司">
-                    民盛保险代理有限公司
-                </a>
-            </div>
-        </div>
-        <div class="head_right">
-            <div class="head_right_top">
-                <ul>
-                    <li><span>·</span>服务热线：400-880-2177</li>
-                    <li><span>·</span>关注我们：<label>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./static/img/index/qrcode_for_ms.png" alt="民盛金融微信号"></label></li>
-                </ul>
-                <!-- <input type="text" class="search-keyword" placeholder="请输入关键字" />
-                <button type="button">搜索</button> -->
-                <i class="clear_fix"></i>
-            </div>
-            <div class="nav">
-                <ul class="nav_ul">
-                    <li class="nav_li"><a class="nav_on_top current" href="http://www.mschn.cn/">首页</a></li>
-                    <li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/about/gongsi/">关于民盛</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                                <li><a href="http://www.mschn.cn/a/about/gongsi/" target="_blank">公司介绍</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/about/wenhua/" target="_blank">企业文化</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/about/memorabilia/" target="_blank">大事记</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/about/cooperative/" target="_blank">合作机构</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/news/minsheng/">民盛动态</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                                <li><a href="http://www.mschn.cn/a/news/minsheng/" target="_blank">新闻中心</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/news/media/" target="_blank">媒体焦点</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/news/industry/" target="_blank">行业焦点</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/news/notice/" target="_blank">通知公告</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/fen/gedai/">各事业部</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                                <li><a href="http://www.mschn.cn/a/fen/gedai/" target="_blank">个人代理事业部</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/fen/mendai/" target="_blank">门店代理事业部</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/fen/jiandai/" target="_blank">迅车e家事业部</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/service/active/">服务中心</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/active/" target="_blank">安康守护卡激活</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/query/" target="_blank">保单查询</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/classroom/" target="_blank">保险课堂</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/complain/" target="_blank">投诉建议</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/comments/" target="_blank">给我们留言</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/download/" target="_blank">下载中心</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/production/life/">产品中心</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                                <li><a href="http://www.mschn.cn/a/production/life/" target="_blank">寿险产品</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/production/car/" target="_blank">车险产品</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/production/loan/" target="_blank">信贷产品</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/production/card/" target="_blank">卡单产品</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/zsjm/">招商加盟</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                            </ul>
-                        </div>
-                    </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/contact/">联系我们</a>
-                        <div class="subnav">
-                            <ul>
-                                
-                            </ul>
-                        </div>
-                    </li>
-                    <i class="clear_fix"></i>
-                </ul>
 
-            </div>
-        </div>
-        <i class="clear_fix"></i>
-    </div>
-</div>
+    <%@include file="./web/public/top.jsp" %>
     
 <!-- /header -->
     <div class="home-foc">
@@ -325,109 +198,9 @@
         </div>
     </div>
 <!-- //底部模板 -->
-<div class="footer_ms">
-    <div class="footer_bottom">
-        <ul class="top_ul">
-            <li class="top_li">
-                <div class="top_column">关于民盛</div>
-                <div class="sub_menu_div">
-                    <ul>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/about/gongsi/" target="_blank">公司介绍</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/about/wenhua/" target="_blank">企业文化</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/about/memorabilia/" target="_blank">大事记</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/about/cooperative/" target="_blank">合作机构</a></li>
-                        
-                    </ul>
-                </div>
-            </li><li class="top_li">
-                <div class="top_column">民盛动态</div>
-                <div class="sub_menu_div">
-                    <ul>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/news/minsheng/" target="_blank">新闻中心</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/news/media/" target="_blank">媒体焦点</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/news/industry/" target="_blank">行业焦点</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/news/notice/" target="_blank">通知公告</a></li>
-                        
-                    </ul>
-                </div>
-            </li><li class="top_li">
-                <div class="top_column">各事业部</div>
-                <div class="sub_menu_div">
-                    <ul>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/fen/gedai/" target="_blank">个人代理事业部</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/fen/mendai/" target="_blank">门店代理事业部</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/fen/jiandai/" target="_blank">迅车e家事业部</a></li>
-                        
-                    </ul>
-                </div>
-            </li><li class="top_li">
-                <div class="top_column">服务中心</div>
-                <div class="sub_menu_div">
-                    <ul>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/service/active/" target="_blank">安康守护卡激活</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/service/query/" target="_blank">保单查询</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/service/classroom/" target="_blank">保险课堂</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/service/complain/" target="_blank">投诉建议</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/service/comments/" target="_blank">给我们留言</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/service/download/" target="_blank">下载中心</a></li>
-                        
-                    </ul>
-                </div>
-            </li><li class="top_li">
-                <div class="top_column">产品中心</div>
-                <div class="sub_menu_div">
-                    <ul>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/production/life/" target="_blank">寿险产品</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/production/car/" target="_blank">车险产品</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/production/loan/" target="_blank">信贷产品</a></li>
-                        
-                        <li class="sub_li"><a href="http://www.mschn.cn/a/production/card/" target="_blank">卡单产品</a></li>
-                        
-                    </ul>
-                </div>
-            </li>
-            <li class="top_li">
-                <div class="top_column">关注我们</div>
-                <div class="sub_menu_div">
-                    <img src="./static/img/index/qrcode_for_ms.png" alt="民盛金融微信号">
-                    <p>扫一扫关注 民盛金融</p>
-                </div>
-            </li>
-            <i class="clear_fix"></i>
-        </ul>
-            
-        <div class="copyright">
-            <img src="./static/img/index/ms_phone.png">
-            <p>© 民盛保险代理有限公司官网版权所有&nbsp;&nbsp; 皖ICP备14012517号-1 </p>
-        </div>
-    <!-- /powered -->
-   </div>
-</div>
-<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
-<script language="javascript" type="text/javascript" src="./static/js/index/dedeajax2.js"></script>
-<script language="javascript" type="text/javascript" src="./static/js/index/j.js"></script>
+
+<%@include file="./web/public/foot.jsp" %>
 <script language="javascript" type="text/javascript" src="./static/js/index/jquery.SuperSlide.js"></script>
-<script type="text/javascript" src="./static/js/index/public.js"></script>
 <!-- /footer -->
 <script type="text/javascript">
 $(function(){
@@ -457,13 +230,6 @@ $(function(){
     tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 });
 
-function CheckLogin(){
-  var taget_obj = document.getElementById('_userlogin');
-  myajax = new DedeAjax(taget_obj,false,false,'','','');
-  myajax.SendGet2("/member/ajax_loginsta.php");
-  DedeXHTTP = null;
-}
 </script>
-
-
-</body></html>
+</body>
+</html>

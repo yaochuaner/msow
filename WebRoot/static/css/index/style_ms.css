@@ -608,7 +608,7 @@ input,select,button{
     overflow: hidden;
 }
 .list_photo.lou{
-    background-image:url(../images/bg_lou.png);
+    background-image:url(../../img/about/bg_lou.png);
 }
 .list_photo.ren{
     background-image:url(../images/bg_ren.png);
@@ -634,6 +634,13 @@ input,select,button{
 .list_body{
     width: 1200px;
     margin:60px auto;
+}
+.list_body:before, .list_body:after {
+    content: " ";
+    display: table;
+}
+.list_body:after {
+    clear: both;
 }
 .list_body .list_left{
     width: 240px;
@@ -663,14 +670,9 @@ input,select,button{
     display: inline-block;
     height: 32px;
     width: 100px;
-    text-indent: -3.6rem;
-    overflow:hidden;
+    font-size: 23px;
     vertical-align: middle;
     
-}
-.com_name span a{
-    color: #333;
-    font-size: 23px;
 }
 
 .list_sub_menu{

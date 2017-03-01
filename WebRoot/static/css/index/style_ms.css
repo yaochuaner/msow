@@ -274,7 +274,6 @@ input,select,button{
 .home-foc-nav li.on  .dot{
     background: #fff;
 }
-
 .home-foc-nav a {
     background: url("../../img/index/icon.png") no-repeat;
     width: 45px;

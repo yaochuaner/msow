@@ -8,15 +8,15 @@
 $(function(){
     
     //高亮显示当前活动导航
-    var path = location.pathname;
-    var folder = path.split("/")[2];
+    // var path = location.pathname;
+    // var folder = path.split("/")[2];
 
-    $(".nav_on_top").each(function(){
-        var href = $(this).attr("href").split("/")[2];
-        $(this).removeClass("current");
-        if (href === folder) {
-            $(this).addClass("current");
-        }
+    // $(".nav_on_top").each(function(){
+    //     var href = $(this).attr("href").split("/")[2];
+    //     $(this).removeClass("current");
+    //     if (href === folder) {
+    //         $(this).addClass("current");
+    //     }
 
-    });
+    // });
 });

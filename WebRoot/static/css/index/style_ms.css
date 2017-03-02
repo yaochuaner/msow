@@ -620,13 +620,13 @@ input,select,button{
     background-image:url(../images/bg_news.png);
 }
 .list_photo.service{
-    background-image:url(../images/bg_service.png);
+    background-image:url(../../img/service/bg_service.png);
 }
 .list_photo.fen{
     background-image:url(../images/bg_fen.png);
 }
 .list_photo.lianxi{
-    background-image:url(../images/bg_lianxi.png);
+    background-image:url(../../img/contact/bg_lianxi.png);
 }
 .list_photo.production{
     background-image:url(../images/bg_production.png);

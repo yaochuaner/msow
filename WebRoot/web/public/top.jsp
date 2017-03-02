@@ -20,9 +20,9 @@
             </div>
             <div class="nav">
                 <ul class="nav_ul">
-                    <li class="nav_li"><a class="nav_on_top current" href="./">首页</a></li>
+                    <li class="nav_li"><a class='nav_on_top <% if (uri.indexOf("web") == -1) { %>current<% } %>' href="./">首页</a></li>
                     <li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="./web/about/introduction.jsp">关于民盛</a>
+                        <a class='nav_on_top <% if (uri.indexOf("about") > 0) { %>current<% } %>' href="./web/about/introduction.jsp">关于民盛</a>
                         <div class="subnav">
                             <ul>
                                 
@@ -65,22 +65,20 @@
                             </ul>
                         </div>
                     </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/service/active/">服务中心</a>
+                        <a class='nav_on_top <% if (uri.indexOf("service") > 0) { %>current<% } %>' href="./web/service/activation.jsp">服务中心</a>
                         <div class="subnav">
                             <ul>
+                                <li><a href="./web/service/activation.jsp" target="_blank">卡单激活</a></li>
                                 
-                                <li><a href="http://www.mschn.cn/a/service/active/" target="_blank">安康守护卡激活</a></li>
+                                <li><a href="./web/service/query.jsp" target="_blank">保单查询</a></li>
                                 
-                                <li><a href="http://www.mschn.cn/a/service/query/" target="_blank">保单查询</a></li>
+                                <li><a href="./web/service/classroom.jsp" target="_blank">保险课堂</a></li>
                                 
-                                <li><a href="http://www.mschn.cn/a/service/classroom/" target="_blank">保险课堂</a></li>
+                                <li><a href="./web/service/complain.jsp" target="_blank">投诉建议</a></li>
                                 
-                                <li><a href="http://www.mschn.cn/a/service/complain/" target="_blank">投诉建议</a></li>
+                                <li><a href="./web/service/comments.jsp" target="_blank">给我们留言</a></li>
                                 
-                                <li><a href="http://www.mschn.cn/a/service/comments/" target="_blank">给我们留言</a></li>
-                                
-                                <li><a href="http://www.mschn.cn/a/service/download/" target="_blank">下载中心</a></li>
-                                
+                                <li><a href="./web/service/download.jsp" target="_blank">下载中心</a></li>
                             </ul>
                         </div>
                     </li><li class="nav_li subcolumn">
@@ -106,7 +104,7 @@
                             </ul>
                         </div>
                     </li><li class="nav_li subcolumn">
-                        <a class="nav_on_top" href="http://www.mschn.cn/a/contact/">联系我们</a>
+                        <a class='nav_on_top <% if (uri.indexOf("contact") > 0) { %>current<% } %>' href="./web/contact/index.jsp">联系我们</a>
                         <div class="subnav">
                             <ul>
                                 

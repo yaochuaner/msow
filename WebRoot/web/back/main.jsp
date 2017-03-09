@@ -2,10 +2,9 @@
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-String username = request.getParameter("username");
-String password = request.getParameter("password");
-if ("admin".equals(username) && "123".equals(password)) {
-	response.sendRedirect("main.jsp");
+String logined = (String) session.getAttribute("logined");
+if (!"yes".equals(logined)) {
+	response.sendRedirect("login.jsp");
 }
 %>
 

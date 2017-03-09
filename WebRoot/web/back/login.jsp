@@ -11,7 +11,9 @@ String note = "";
 if (request.getMethod().equals("POST") && username!=null && password!=null) {
 	if (username!=null && password!=null) {
 		if ("21232F297A57A5A743894A0E4A801FC3".equals(oMD5.getMD5ofStr(username)) && "202CB962AC59075B964B07152D234B70".equals(oMD5.getMD5ofStr(password))) {
-			response.sendRedirect("main.jsp");
+			session.setAttribute("logined", "yes");
+			session.setMaxInactiveInterval(1000);
+      		response.sendRedirect("main.jsp");
 		} else {
 			note = "* 账号或密码有误！";
 		}

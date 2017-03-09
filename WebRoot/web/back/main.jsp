@@ -1,25 +1,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id='oMD5' scope='request' class='cn.mschn.bean.MD5'/>
-
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 String username = request.getParameter("username");
 String password = request.getParameter("password");
-String note = "";
-
-if (request.getMethod().equals("POST") && username!=null && password!=null) {
-	if (username!=null && password!=null) {
-		if ("21232F297A57A5A743894A0E4A801FC3".equals(oMD5.getMD5ofStr(username)) && "202CB962AC59075B964B07152D234B70".equals(oMD5.getMD5ofStr(password))) {
-			response.sendRedirect("main.jsp");
-		} else {
-			note = "* 账号或密码有误！";
-		}
-	} else {
-		note = "* 请填写账号和密码！";
-	}
-} 
-
+if ("admin".equals(username) && "123".equals(password)) {
+	response.sendRedirect("main.jsp");
+}
 %>
 
 <!DOCTYPE html>
@@ -60,22 +47,9 @@ if (request.getMethod().equals("POST") && username!=null && password!=null) {
 
     <div class="container">
 
-      <form class="form-signin" method="post">
-        <h2 class="form-signin-heading">请输入账号和密码</h2>
-        <label for="inputEmail" class="sr-only">账号</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="账号" name="username" required autofocus>
-        <label for="inputPassword" class="sr-only">密码</label>
-        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="密码" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> 记住我
-          </label>
-        </div>
-        <p class="text-danger"><%= note %></p>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-      </form>
+      main
 
-    </div> <!-- /container -->
+    </div>
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
